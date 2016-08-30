@@ -52,3 +52,11 @@ var barsik = new Cat('Barsik', 'grey');
 barsik.run();
 var andrijko = new Cat('Andrijko', 'black');
 andrijko.run();
+
+/* global my-alert */
+my-alert.addEventListener('click', joke);
+
+function joke (e){
+    e.preventDeafault();
+    alert('Its a joke!');
+};
